@@ -46,9 +46,9 @@
       }
       #overlay-contents {
         position: absolute;
-        bottom: 9% !important; 
-        left: 24% !important;
-        /* transform: translateX(-100%);  */
+        bottom: 6%; 
+        left: 50%;
+        transform: translateX(-50%); 
         text-align: center;
       }
 
@@ -185,8 +185,8 @@
           padding-top: 10%;
         }
         #overlay-contents {
-          bottom: 6%;
-          left: 73%;
+          bottom: 9% !important;
+          left: 25% !important;
         }
         .dear-box {
           width: 27%;
@@ -439,7 +439,7 @@
             class="img-fluid img-float"
             data-bs-toggle="modal"
             data-bs-target="#myModal"
-            onclick="act4()"
+            onclick="act1()"
           />
           <img
             src="assets/slide_6/bg6_3.webp"
@@ -463,7 +463,7 @@
             class="img-fluid img-float"
             data-bs-toggle="modal"
             data-bs-target="#myModal"
-            onclick="act1()"
+            onclick="act4()"
           />
           <img
           src="assets/slide_6/bg6_6.webp"
@@ -471,7 +471,7 @@
           class="img-fluid img-float"
           data-bs-toggle="modal"
           data-bs-target="#myModal"
-          onclick="act3()"
+          onclick="act5()"
         />
         <img
           src="assets/slide_6/bg6_7.webp"
@@ -479,7 +479,7 @@
           class="img-fluid img-float"
           data-bs-toggle="modal"
           data-bs-target="#myModal"
-          onclick="act1()"
+          onclick="act6()"
         />
         </div>
        <div class="md:tw-col-span-2 md:tw-translate-x-[1.5vw]">
@@ -625,28 +625,28 @@
                   alt="..."
                 />
               </div>
-              <div class="carousel-item px-4" id="act3">
+              <div class="carousel-item px-4" id="act5">
                 <img
                   src="assets/slide_6/foto3.webp"
                   class="d-block w-100"
                   alt="..."
                 />
               </div>
-              <div class="carousel-item px-4" id="act4">
+              <div class="carousel-item px-4" id="act3">
                 <img
                   src="assets/slide_6/foto4.webp"
                   class="d-block w-100"
                   alt="..."
                 />
               </div>
-              <div class="carousel-item px-4">
+              <div class="carousel-item px-4" id="act4">
                 <img
                   src="assets/slide_6/foto5.webp"
                   class="d-block w-100"
                   alt="..."
                 />
               </div>
-              <div class="carousel-item px-4">
+              <div class="carousel-item px-4" id="act6">
                 <img
                   src="assets/slide_6/foto6.webp"
                   class="d-block w-100"
@@ -718,7 +718,21 @@
               </div>
               <div class="carousel-item px-4">
                 <img
-                  src="assets/slide_6/foto15.webp"
+                  src="assets/slide_6/foto16.webp"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item px-4">
+                <img
+                  src="assets/slide_6/foto17.webp"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item px-4">
+                <img
+                  src="assets/slide_6/foto18.webp"
                   class="d-block w-100"
                   alt="..."
                 />
@@ -894,6 +908,14 @@
       function act4() {
         $(".carousel-item").removeClass("active");
         $("#act4").addClass("active");
+      }
+      function act5() {
+        $(".carousel-item").removeClass("active");
+        $("#act5").addClass("active");
+      }
+      function act6() {
+        $(".carousel-item").removeClass("active");
+        $("#act6").addClass("active");
       }
       // Audio control functionality
       let audioElement = document.getElementById("myAudio");
