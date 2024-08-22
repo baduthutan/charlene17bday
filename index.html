@@ -46,9 +46,9 @@
       }
       #overlay-contents {
         position: absolute;
-        bottom: 4%; /* Adjust according to your needs */
-        left: 50%;
-        transform: translateX(-50%); /* Centers the content horizontally */
+        bottom: 9% !important; 
+        left: 24% !important;
+        /* transform: translateX(-100%);  */
         text-align: center;
       }
 
@@ -67,7 +67,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: url("assets/animm.gif") no-repeat center center fixed;
+        background: url("assets/anim.gif") no-repeat center center fixed;
         background-size: cover;
         background-attachment: scroll;
         z-index: 2;
@@ -200,8 +200,8 @@
           padding-top: 25%;
         }
         .timer .col-4 {
-          width: 8.8vw;
-          height: 14.3vw;
+          width: 7vw;
+          height: 12vw;
           padding-top: 3vw;
         }
 
@@ -228,11 +228,11 @@
       alert("{{ session('success') }}");
     </script>
     @endif -->
-    <audio id="myAudio" autoplay loop>
+    <!-- <audio id="myAudio" autoplay loop>
       <source src="assets/bgsound.mp3" type="audio/mpeg" />
       Your browser does not support the audio element.
-    </audio>
-    <div id="audioControl" onclick="toggleAudio()">
+    </audio> -->
+    <!-- <div id="audioControl" onclick="toggleAudio()">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         height="1em"
@@ -242,7 +242,7 @@
           d="M533.6 32.5c-10.3-8.4-25.4-6.8-33.8 3.5s-6.8 25.4 3.5 33.8C557.5 113.8 592 180.8 592 256s-34.5 142.2-88.7 186.3c-10.3 8.4-11.8 23.5-3.5 33.8s23.5 11.8 33.8 3.5C598.5 426.8 640 346.2 640 256s-41.5-170.8-106.4-223.5zM473.1 107c-10.3-8.4-25.4-6.8-33.8 3.5s-6.8 25.4 3.5 33.8C475.3 170.7 496 210.9 496 256s-20.7 85.3-53.2 111.8c-10.3 8.4-11.8 23.5-3.5 33.8s23.5 11.8 33.8 3.5c43.2-35.2 70.9-88.9 70.9-149s-27.7-113.8-70.9-149zm-60.5 74.5c-10.3-8.4-25.4-6.8-33.8 3.5s-6.8 25.4 3.5 33.8C393.1 227.6 400 241 400 256s-6.9 28.4-17.7 37.3c-10.3 8.4-11.8 23.5-3.5 33.8s23.5 11.8 33.8 3.5C434.1 312.9 448 286.1 448 256s-13.9-56.9-35.4-74.5zM159.9 201.9L272 102.3V409.7L159.9 310.1c-4.4-3.9-10.1-6.1-15.9-6.1H56c-4.4 0-8-3.6-8-8V216c0-4.4 3.6-8 8-8h88c5.9 0 11.6-2.2 15.9-6.1zM290.2 32c-7.3 0-14.3 2.7-19.8 7.5L134.9 160H56c-30.9 0-56 25.1-56 56v80c0 30.9 25.1 56 56 56h78.9L270.4 472.5c5.5 4.8 12.5 7.5 19.8 7.5c16.5 0 29.8-13.3 29.8-29.8V61.8C320 45.3 306.7 32 290.2 32z"
         />
       </svg>
-    </div> 
+    </div>  -->
     <nav class="navbar navbar-dark navbar-expand-lg fixed-top px-3">
       <a class="navbar-brand" href="#">
         <img
@@ -304,12 +304,17 @@
         <img
           src="assets/slide_2/bg2_1.webp"
           alt="invitation title"
-          class="img-fluid img-float tw-px-[0] md:tw-px-[0] md:tw-pr-[12vw]"
+          class="img-fluid img-float tw-px-[0] md:tw-px-[0] md:tw-pr-[10vw] md:tw-mt-[4vw]"
         />
         <img
           src="assets/slide_2/bg2_2.webp"
           alt="invitation"
           class="img-fluid img-slide tw-pr-[44vw] tw-pl-[2vw] tw-mt-[8vw] mobile-com"
+        /> 
+        <img
+          src="assets/desktop/bg2_ds_1.webp"
+          alt="invitation"
+          class="img-fluid img-slide md:tw-px-[6vw] md:tw-pr-[16.5vw] tw-mt-[3vw] ds-com"
         /> 
       </section>
     </div>
@@ -318,14 +323,19 @@
       class="bg tw-bg-[url('assets/slide_3/bg3.webp')] md:tw-bg-[url('assets/desktop/bg3_ds.webp')]"
       id="3"
     >
-      <section class="tw-text-center tw-top-[8%] md:tw-pl-[0vw] md:tw-pr-[47vw] md:tw-top-[14.5%]">
-        <div class="tw-relative tw-top-0 tw-left-0">
+      <section class="tw-text-center tw-top-[8%] md:tw-grid md:tw-grid-cols-2 md:tw-pl-[0vw] md:tw-pl-[1vw] md:tw-top-[16%]">
+        <div>
           <img
             src="assets/slide_3/bg3_1.webp"
             alt="date title"
-            class="img-fluid img-float tw-pl-[19vw] tw-pr-[15vw] md:tw-pl-[6vw] md:tw-pr-[9vw]"
-          />      
-          <div class="tw-mt-[-2vw] tw-translate-x-[7vw] md:tw--mt-[4vw] md:tw--translate-x-[0.2vw]">
+            class="img-fluid img-float tw-pl-[19vw] tw-pr-[15vw] mobile-com"
+          />  
+          <img
+            src="assets/desktop/bg3_ds_2.webp"
+            alt="date title"
+            class="img-fluid img-float tw-pl-[16vw] tw-pr-[6vw] tw-mt-[4vw] ds-com"
+          />     
+          <div class="tw-mt-[-2vw] tw-translate-x-[7vw] md:tw--mt-[2.5vw] md:tw-translate-x-[4.7vw]">
             <div class="row timer d-flex justify-content-center tw-px-[10vw] md:tw-text-lg">
               <div
                 class="col-4 tw-bg-[url('assets/slide_3/bg3_2.webp')]"
@@ -346,17 +356,25 @@
             </div>
           </div>
         </div>
+        <div>
+          <img
+            src="assets/desktop/bg3_ds_1.webp"
+            alt="date title"
+            class="img-fluid img-float tw-pl-[6.5vw] tw-pr-[15vw] tw-mt-[2vw] ds-com"
+          />  
+        </div>
       </section>
     </div>
     <div
-      class="bg tw-bg-[url('assets/slide_4/bg4.webp')] md:tw-bg-[url('assets/desktop/bg4_ds.webp')]"
+      class="bg tw-bg-[url('assets/slide_4/bg4.webp')] md:tw-bg-[url('assets/desktop/bg4_ds.webp')] md:tw-pt-[100%]"
       id="4"
     >
       <section class="tw-text-center tw-top-[12%] md:tw-top-[9.5%] md:tw-px-[1vw] md:tw-grid md:tw-grid-cols-2">
-          <img
+          <div>
+            <img
             src="assets/slide_4/bg4_1.webp"
             alt="venue title"
-            class="img-fluid img-float tw-px-[9vw]"
+            class="img-fluid img-float tw-px-[9vw] mobile-com"
           />
           <a
             href="https://maps.app.goo.gl/s9jeVwCVKM1oXj4t7"
@@ -364,49 +382,57 @@
             <img
               src="assets/slide_4/bg4_2.webp"
               alt="venue map"
-              class="img-fluid img-float tw-mt-[3vw] tw-pl-[3vw] tw-pr-[20vw] md:tw--mt-[1vw] md:tw-px-[0vw]"
+              class="img-fluid img-float tw-mt-[3vw] tw-pl-[3vw] tw-pr-[20vw] md:tw-mt-[12.5vw] md:tw-pl-[5vw] md:tw-pr-[1.5vw]"
             />
           </a>
+          </div>
+          <div>
+            <img
+            src="assets/slide_4/bg4_1.webp"
+            alt="venue title"
+            class="img-fluid img-float tw-pl-[0vw] tw-pr-[9vw] tw-mt-[16vw] ds-com"
+          />
           <img
             src="assets/slide_4/bg4_3.webp"
             alt="venue title"
-            class="img-fluid img-float tw-px-[6vw] md:tw--mt-[3vw] md:tw-px-[13vw]"
+            class="img-fluid img-float tw-px-[6vw] md:tw-mt-[0vw] md:tw-pl-[0] md:tw-pr-[4vw]"
           />
+          </div>
       </section>
     </div>
     <!-- break -->
     <div
-      class="bg tw-bg-[url('assets/slide_5/bg5.webp')] md:tw-bg-[url('assets/desktop/bg5_ds.webp')]"
+      class="bg tw-bg-[url('assets/slide_5/bg5.webp')] md:tw-bg-[url('assets/desktop/bg5_ds.webp')] md:tw-pt-[72.5%]"
       id="5"
     >
       <section
-        class="tw-text-center tw-top-[9%] tw-px-[5vw] md:tw-top-[2%] md:tw-pl-[6vw] md:tw-pr-[46vw]"
+        class="tw-text-center tw-top-[9%] tw-px-[5vw] md:tw-top-[8%] md:tw-pr-[6vw] md:tw-pl-[42vw]"
       >
         <img
           src="assets/slide_5/bg5_1.webp"
           alt="attire title"
-          class="img-fluid img-float tw-pl-[8vw] tw-pr-[12vw] md:tw-pl-[1vw] md:tw-pr-[4vw] md:tw-pt-[8vw]"
+          class="img-fluid img-float tw-pl-[8vw] tw-pr-[12vw] md:tw-pl-[6vw] md:tw-pr-[6vw] md:tw-pt-[9vw]"
         />
         <img
           src="assets/slide_5/bg5_2.webp"
           alt="attire color"
-          class="img-fluid img-float tw-mt-[67vw] tw-px-[6vw] md:tw--mt-[6vw]"
+          class="img-fluid img-float tw-mt-[67vw] tw-px-[6vw] md:tw--mt-[1vw]"
         />
       </section>
     </div>
     <!-- break -->
     <div
-      class="bg tw-bg-[url('assets/slide_6/bg6.webp')] tw-pt-[235%] md:tw-bg-[url('assets/desktop/bg6_ds.webp')] md:tw-pt-[60%]"
+      class="bg tw-bg-[url('assets/slide_6/bg6.webp')] tw-pt-[235%] md:tw-bg-[url('assets/desktop/bg6_ds.webp')] md:tw-pt-[58%]"
       id="6"
     >
-      <section class="tw-text-center tw-top-[7%] tw-px-[1vw] md:tw-px-[5vw] md:tw-top-[8%]">
+      <section class="tw-text-center tw-top-[7%] tw-px-[1vw] md:tw-px-[6vw] md:tw-top-[8%] md:tw-grid md:tw-grid-cols-5">
         <img
           src="assets/slide_6/bg6_1.webp"
           alt="attire title"
-          class="img-fluid img-float tw-pl-[1vw] tw-pr-[3vw] tw--mb-[3vw] md:tw-pl-[2vw] md:tw-pr-[46vw] md:tw-mb-[2vw]"
+          class="img-fluid img-float tw-pl-[1vw] tw-pr-[3vw] tw--mb-[3vw] mobile-com"
         />
         
-        <div class="tw-grid tw-grid-cols-2 md:tw-grid-cols-4 tw-gap-4 tw-px-[15vw]  md:tw-px-[0] md:tw-pr-[5vw] md:tw-pt-[0]">
+        <div class="tw-grid tw-grid-cols-2 md:tw-grid-cols-3 md:tw-col-span-3 tw-gap-4 tw-px-[15vw]  md:tw-px-[0] md:tw-pl-[1.5vw] md:tw-pr-[5vw] md:tw-pt-[4.5vw]">
           <img
             src="assets/slide_6/bg6_2.webp"
             alt="gallery img 3"
@@ -456,12 +482,18 @@
           onclick="act1()"
         />
         </div>
-       
+       <div class="md:tw-col-span-2 md:tw-translate-x-[1.5vw]">
+        <img
+        src="assets/slide_6/bg6_1.webp"
+        alt="attire title"
+        class="img-fluid img-float tw-mt-[13vw] tw--mb-[3.5vw] ds-com"
+      />
         <img
           src="assets/slide_6/bg6_8.webp"
           alt="rules"
-          class="img-fluid img-float tw-pl-[6vw] tw-pr-[5vw] tw-pt-[0vw] md:tw-pl-[2vw] md:tw-pr-[0] md:tw-pt-[0]"
+          class="img-fluid img-float tw-pl-[6vw] tw-pr-[5vw] tw-pt-[0vw] md:tw-pl-[0vw] md:tw-pr-[0] md:tw-pt-[0]"
         />
+       </div>
       </section>
     </div>
     <!-- break -->
@@ -475,7 +507,7 @@
         <img
           src="assets/slide_7/bg7_1.webp"
           alt="invitation"
-          class="img-fluid img-float md:tw-pl-[6vw] md:tw-pr-[4vw] md:tw-mb-[12vw]"
+          class="img-fluid img-float md:tw-mb-[4vw]"
         />
         <div class="tw-px-[5vw] md:tw-px-[8vw]">
           <form
@@ -536,7 +568,7 @@
             </div>
           </div>
           <p
-            class="mb-0 tw-mt-[20px] fs-5 fw-light md:tw-mt-[6vw] md:tw-pb-[1vw]"
+            class="mb-0 tw-mt-[20px] fs-5 fw-light md:tw-mt-[4vw] md:tw-pb-[1vw]"
             style="color: #FBEB8A"
           >
             Will you attend?
@@ -559,7 +591,7 @@
           </div>
         </div>
       </section>
-      <section class="tw-bottom-[0%] tw-px-[5vw] md:tw-bottom-[3%] md:tw-px-[24vw]">
+      <section class="tw-bottom-[0%] tw-px-[5vw] md:tw-bottom-[3%] md:tw-px-[30vw]">
         <img
           src="assets/slide_7/bg7_2.webp"
           alt="invitation"
@@ -721,7 +753,7 @@
       </div>
     </div>
     <div id="gif"></div>
-    <div id="overlay" onclick="hideOverlay()">
+    <!-- <div id="overlay" onclick="hideOverlay()">
       <section
         id="overlay-contents"
         class="d-flex flex-column justify-content-center align-items-center"
@@ -743,7 +775,7 @@
           Click anywhere to continue...
         </p>
       </section>
-    </div>
+    </div> -->
     <script>
       tailwind.config = {
         prefix: "tw-",
